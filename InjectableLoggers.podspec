@@ -1,42 +1,20 @@
-#
-# Be sure to run `pod lib lint InjectableLoggers.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'InjectableLoggers'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of InjectableLoggers.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.0.1'
+  s.summary          = 'A nice set of protocols that will help your logger(s) at being loosely coupled and injectable'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A nice set of protocols that will help logger(s) at being loosely coupled and injectable.
+
+Bonus! This lib comes with two concrete loggers 🎉
+Another bonus! This lib comes with a pretty handy mock logger called MockLogger 🎉
                        DESC
 
-  s.homepage         = 'https://github.com/mclovink@me.com/InjectableLoggers'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/mennolovink/InjectableLoggers'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mclovink@me.com' => 'mclovink@me.com' }
-  s.source           = { :git => 'https://github.com/mclovink@me.com/InjectableLoggers.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/mennolovink/InjectableLoggers.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'InjectableLoggers/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'InjectableLoggers' => ['InjectableLoggers/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import InjectableLoggers
 
 class ViewController: UIViewController {
 
+    var logger: CanLogMessageAtLevel = Logger(settings: .verboseSettings)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        logger.log(#function)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        logger.log(#function, at: Loglevel.verbose)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        logger.log(#function, at: Loglevel.verbose)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        logger.log(#function, at: Loglevel.warning)
     }
-
 }
 

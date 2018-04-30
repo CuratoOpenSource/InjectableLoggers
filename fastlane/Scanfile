@@ -1,0 +1,2 @@
+workspace("Example/InjectableLoggers.xcworkspace")
+scheme("InjectableLoggers-Example")

@@ -1,0 +1,16 @@
+PODS:
+  - InjectableLoggers (0.1.0)
+
+DEPENDENCIES:
+  - InjectableLoggers (from `../`)
+
+EXTERNAL SOURCES:
+  InjectableLoggers:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InjectableLoggers: b4b633138aed3c15cb9b6684b834e1cd241b5c7d
+
+PODFILE CHECKSUM: c4537348b10a620f863d910e5a1165e2f5530560
+
+COCOAPODS: 1.5.0
