@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'InjectableLoggers_Example' do
+  pod 'InjectableLoggers', :path => '../'
+
+  target 'InjectableLoggers_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
