@@ -3,11 +3,11 @@ public enum Loglevel: UInt {
     case info = 1
     case warning = 2
     case error = 3
-    case none = 4
+    case inactive = 4
 }
 
 public extension Loglevel {
     public static var all: [Loglevel] {
-        return [.verbose, .info, .warning, .error, .none]
+        return [.verbose, .info, .warning, .error, .inactive]
     }
 }

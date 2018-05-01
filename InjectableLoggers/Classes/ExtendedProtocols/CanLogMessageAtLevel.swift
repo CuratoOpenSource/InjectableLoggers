@@ -1,18 +1,19 @@
-public protocol CanLogMessageAtLevel: CanLogMessage {
+public protocol CanLogMessageAtLevel: CanLogMessage, CanLogAtLevel {
     
-    func log(_ message: Any, at level: Loglevel)
+    func log(_ message: Any, atLevel level: Loglevel)
 }
 
-extension CanLogMessageAtLevel {
+public extension CanLogMessageAtLevel {
     
-    public func log(_ message: Any) {
-        log(message, at: Loglevel.info)
+    func log() {
+        log("", atLevel: defaultLogLevel)
     }
-}
-
-extension CanLogMessageAtLevel where Self: HasDefaultLoglevel {
     
-    public func log(_ message: Any) {
-        log(message, at: defaultLogLevel)
+    func log(_ message: Any) {
+        log(message, atLevel: defaultLogLevel)
+    }
+    
+    func log(atLevel level: Loglevel) {
+        log("", atLevel: level)
     }
 }

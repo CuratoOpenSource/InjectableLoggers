@@ -33,7 +33,7 @@ All of thes protocols have lightweight and sensible default implementations and 
 #### When it uses instance methods for logging
 
 ```swift
-extension SomeoneElsesLogger: CanLogMessageAtLevel /* CanLog || CanLogMessage*/ {
+extension SomeoneElsesLogger: CanLogMessageAtLevel /* CanLog || CanLogMessage */ {
 
 	func log(_ message Any, at: LogLevel) {
 		//call existing logging functionality here
@@ -44,7 +44,7 @@ extension SomeoneElsesLogger: CanLogMessageAtLevel /* CanLog || CanLogMessage*/ 
 #### When it uses class methods for logging
 
 ```swift
-struct Logger: CanLogMessageAtLevel /* CanLog || CanLogMessage*/ {
+struct Logger: CanLogMessageAtLevel /* CanLog || CanLogMessage */ {
 
 	func log(_ message Any, at: LogLevel) {
 		//call existing logging functionality here
@@ -80,7 +80,7 @@ logger.log("Hi there") // logs to console: "Hi there"
 ```swift
 let logger: CanLogMessageAtLevel = Logger(settings: .warningSettings)
 
-logger.log("Some info", at LogLevel.info) //Won't log anything because of settings
+logger.log("Some info", atLevel LogLevel.info) //Won't log anything because of settings
 logger.log("Something's up") // logs to settings.destination: "⚠️ Something's up"
 logger.log("Something went wrong") // logs to settings.destination: "⛔️ Something's up"
 ```

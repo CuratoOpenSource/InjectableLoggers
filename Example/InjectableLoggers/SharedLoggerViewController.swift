@@ -7,34 +7,30 @@
 //
 
 import UIKit
-import InjectableLoggers
 
-class ViewController: UIViewController {
-
-    var logger: CanLogMessageAtLevel = Logger(settings: .verboseSettings)
+class SharedLoggerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        logger.log(#function)
+        logger.log("0️⃣", atLevel: .info)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        logger.log(#function, at: Loglevel.verbose)
+        logger.log("1️⃣", atLevel: .verbose)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        logger.log(#function, at: Loglevel.verbose)
+        logger.log("2️⃣", atLevel: .verbose)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        logger.log(#function, at: Loglevel.warning)
+        logger.log("3️⃣", atLevel: .warning)
     }
 }
 

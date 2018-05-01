@@ -4,6 +4,7 @@ public struct ConsoleLogger {
     public init() {}
 }
 
+//MARK: CanLogMessage
 extension ConsoleLogger: CanLogMessage {
     
     public func log(_ message: Any) {

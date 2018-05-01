@@ -1,15 +1,15 @@
 import XCTest
 import InjectableLoggers
 
-class ViewControllerTests: XCTestCase {
+class InjectableLoggerViewControllerTests: XCTestCase {
     
-    var sut: ViewController!
+    var sut: InjectableLoggerViewController!
     var mockLogger: MockLogger!
     
     override func setUp() {
         super.setUp()
         
-        sut = ViewController()
+        sut = InjectableLoggerViewController()
         mockLogger = MockLogger()
     }
     
@@ -22,7 +22,7 @@ class ViewControllerTests: XCTestCase {
         sut.viewDidLoad()
         
         //Assert
-        XCTAssertEqual(mockLogger.loggedMessages(at: Loglevel.info).last?.message as? String, "viewDidLoad()")
+        XCTAssertEqual(mockLogger.loggedMessages(atLevel: Loglevel.info).last?.message as? String, "viewDidLoad()")
     }
     
     func testViewViewDidLayoutSubviews() {
@@ -33,7 +33,7 @@ class ViewControllerTests: XCTestCase {
         sut.viewDidLayoutSubviews()
         
         //Assert
-        XCTAssertEqual(mockLogger.loggedMessages(at: Loglevel.verbose).last?.message as? String, "viewDidLayoutSubviews()")
+        XCTAssertEqual(mockLogger.loggedMessages(atLevel: Loglevel.verbose).last?.message as? String, "viewDidLayoutSubviews()")
     }
     
     // MARK: More verbose assertions

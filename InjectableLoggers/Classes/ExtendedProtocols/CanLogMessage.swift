@@ -3,13 +3,9 @@ public protocol CanLogMessage: CanLog {
     func log(_ message: Any)
 }
 
-public extension CanLogMessage {
+extension CanLogMessage {
     
-    func log() {
+    public func log() {
         log("")
-    }
-    
-    func log(_ message: Any) {
-        print(message)
     }
 }

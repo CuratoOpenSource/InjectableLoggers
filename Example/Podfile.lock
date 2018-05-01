@@ -1,8 +1,17 @@
 PODS:
   - InjectableLoggers (0.1.0)
+  - Nimble (7.1.1)
+  - Quick (1.3.0)
 
 DEPENDENCIES:
   - InjectableLoggers (from `../`)
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   InjectableLoggers:
@@ -10,7 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   InjectableLoggers: b5fe2ac4424138c819555b7a5fc34e5863889d01
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
 
-PODFILE CHECKSUM: c4537348b10a620f863d910e5a1165e2f5530560
+PODFILE CHECKSUM: 95b29c31190c2c1bdc33a7b7be9a24109c0f2b21
 
 COCOAPODS: 1.5.0
