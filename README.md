@@ -1,7 +1,7 @@
 # InjectableLoggers
  [![Version](http://img.shields.io/cocoapods/v/InjectableLoggers.svg?style=flat)](http://cocoapods.org/pods/Zoomy) [![Platform](http://img.shields.io/cocoapods/p/InjectableLoggers.svg?style=flat)](http://cocoapods.org/pods/Zoomy) [![License](http://img.shields.io/cocoapods/l/InjectableLoggers.svg?style=flat)](LICENSE)
 
-A nice set of protocols that will help logger(s) at being loosely coupled and injectable.
+A nice set of protocols that will help logger(s) at being loosely coupled, injectable and testable.
 
 ## Example
 
