@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'InjectableLoggers'
-  s.version          = '0.0.1'
+  s.version          = '0.1.0'
   s.summary          = 'A nice set of protocols that will help your logger(s) at being loosely coupled and injectable'
 
   s.description      = <<-DESC
