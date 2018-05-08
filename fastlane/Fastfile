@@ -1,7 +1,8 @@
 default_platform(:ios)
 
 platform :ios do
-  	lane :tests do  		
+  	lane :tests do
+      cocoapods(clean: true, podfile: "Example/Podfile")
   		scan()
 	end
 
