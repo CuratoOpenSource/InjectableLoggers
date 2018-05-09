@@ -1,4 +1,4 @@
-public class Logger {
+open class Logger {
     
     /// All calls to `log(message: atLevel: inFile: inFunction: atLine: line)` will be relayed to this instance
     /// Inject a mock here if needed
@@ -13,7 +13,7 @@ public class Logger {
 //MARK: CanCanLogMessageAtLevelInFileInFunctionAtLine
 extension Logger: CanLogMessageAtLevelInFileInFunctionAtLine {
     
-    public func log(_ message: Any = "", atLevel level: Loglevel? = nil, inFile file: String? = #file, inFunction function: String? = #function, atLine line: Int? = #line) {
+    open func log(_ message: Any = "", atLevel level: Loglevel? = nil, inFile file: String? = #file, inFunction function: String? = #function, atLine line: Int? = #line) {
         relay?.log(message, atLevel: level, inFile: file, inFunction: function, atLine: line)
         let level = level ?? defaultLogLevel
         guard shouldLog(at: level) else { return }
@@ -29,7 +29,7 @@ extension Logger: CanLogMessageAtLevelInFileInFunctionAtLine {
 //MARK: HasDefaultLoglevel
 extension Logger: HasDefaultLoglevel {
     
-    public var defaultLogLevel: Loglevel {
+    open var defaultLogLevel: Loglevel {
         return settings.defaultLogLevel
     }
 }
