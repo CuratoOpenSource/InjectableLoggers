@@ -6,10 +6,12 @@ platform :ios do
   		scan()
 	end
 
-	lane :release do |options|
+	lane :release do 
+    releaseBranchName = git_branch
+    
 		version = options[:version]
 		ensure_git_branch(branch: 'develop')
-		releaseBranchName = "release/#{version}"
+		
 
 		sh("git", "branch", releaseBranchName)
 		sh("git", "checkout", releaseBranchName)
