@@ -23,6 +23,7 @@
 		DE2B729A20A1E07800344675 /* SharedLoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729320A1DE6000344675 /* SharedLoggerViewController.swift */; };
 		DE2B729B20A1E07D00344675 /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729520A1DEB400344675 /* logger.swift */; };
 		DE2B729D20A1E6B900344675 /* SimpleLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729C20A1E6B900344675 /* SimpleLoggerSpec.swift */; };
+		DE2B729F20A3030100344675 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729E20A3030100344675 /* ExamplesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		DE2B729520A1DEB400344675 /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 		DE2B729720A1E00400344675 /* SharedLoggerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLoggerViewControllerTests.swift; sourceTree = "<group>"; };
 		DE2B729C20A1E6B900344675 /* SimpleLoggerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoggerSpec.swift; sourceTree = "<group>"; };
+		DE2B729E20A3030100344675 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
 		E56CB23B16A6B8408F7F0FF6 /* Pods-InjectableLoggers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectableLoggers_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InjectableLoggers_Tests/Pods-InjectableLoggers_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E7C8658C2407CB79FDFDA2A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* InjectableLoggerViewController.swift */,
 				DE2B729320A1DE6000344675 /* SharedLoggerViewController.swift */,
+				DE2B729E20A3030100344675 /* ExamplesViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* InjectableLoggerViewController.swift in Sources */,
+				DE2B729F20A3030100344675 /* ExamplesViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				DE2B729A20A1E07800344675 /* SharedLoggerViewController.swift in Sources */,
 				DE2B729620A1DEB400344675 /* logger.swift in Sources */,
