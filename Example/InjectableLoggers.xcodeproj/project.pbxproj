@@ -24,6 +24,7 @@
 		DE2B729B20A1E07D00344675 /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729520A1DEB400344675 /* logger.swift */; };
 		DE2B729D20A1E6B900344675 /* SimpleLoggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729C20A1E6B900344675 /* SimpleLoggerSpec.swift */; };
 		DE2B729F20A3030100344675 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B729E20A3030100344675 /* ExamplesViewController.swift */; };
+		DE2B72C320A345FA00344675 /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = DE2B72C220A345FA00344675 /* changelog.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		DE2B729720A1E00400344675 /* SharedLoggerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLoggerViewControllerTests.swift; sourceTree = "<group>"; };
 		DE2B729C20A1E6B900344675 /* SimpleLoggerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoggerSpec.swift; sourceTree = "<group>"; };
 		DE2B729E20A3030100344675 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		DE2B72C220A345FA00344675 /* changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = changelog.md; path = ../changelog.md; sourceTree = "<group>"; };
 		E56CB23B16A6B8408F7F0FF6 /* Pods-InjectableLoggers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InjectableLoggers_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InjectableLoggers_Tests/Pods-InjectableLoggers_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E7C8658C2407CB79FDFDA2A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				DE2B72C220A345FA00344675 /* changelog.md */,
 				688CA1A587DA3DB5B780FDA6 /* InjectableLoggers.podspec */,
 				E7C8658C2407CB79FDFDA2A2 /* README.md */,
 				5710747F967725E210F1BF5D /* LICENSE */,
@@ -280,6 +283,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				DE2B72C320A345FA00344675 /* changelog.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
