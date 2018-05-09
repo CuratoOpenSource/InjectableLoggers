@@ -32,6 +32,6 @@ platform :ios do
   		sh("git", "merge", "master")
   		sh("git", "push", "origin", "develop")
 
-  		pod_push
+  		# pod_push
 	end
 end
