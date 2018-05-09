@@ -33,6 +33,13 @@ platform :ios do
   		sh("git", "merge", "master")
   		sh("git", "push", "origin", "develop")
 
-  		# pod_push
+  		pod_push
+
+      github_release = set_github_release(repository_name: "mennolovink/InjectableLoggers",
+                                          api_token: ENV["GITHUB_TOKEN"],
+                                          name: version,
+                                          tag_name: version,
+                                          description: (File.read("changelog") rescue "No changelog provided"),
+                                          commitish: "master")
 	end
 end
