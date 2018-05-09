@@ -1,5 +1,5 @@
 PODS:
-  - InjectableLoggers (1.0.1)
+  - InjectableLoggers (1.0.2)
   - Nimble (7.1.1)
   - Quick (1.3.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  InjectableLoggers: 45f6ed9602b03a7174b3016dee403c8f14138b65
+  InjectableLoggers: 5bc4b104d674eae19f29fbb46d8bd898509077e9
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
 
