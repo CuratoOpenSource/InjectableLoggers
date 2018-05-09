@@ -13,9 +13,8 @@ open class Logger {
 //MARK: CanCanLogMessageAtLevelInFileInFunctionAtLine
 extension Logger: CanLogMessageAtLevelInFileInFunctionAtLine {
     
-    open func log(_ message: Any = "", atLevel level: Loglevel? = nil, inFile file: String? = #file, inFunction function: String? = #function, atLine line: Int? = #line) {
+    open func log(_ message: Any = "", atLevel level: Loglevel, inFile file: String? = #file, inFunction function: String? = #function, atLine line: Int? = #line) {
         relay?.log(message, atLevel: level, inFile: file, inFunction: function, atLine: line)
-        let level = level ?? defaultLogLevel
         guard shouldLog(at: level) else { return }
         settings.destination.log(settings.formatter.format(message,
                                                            with: settings.loglevelStrings[level] ?? "",
@@ -23,6 +22,14 @@ extension Logger: CanLogMessageAtLevelInFileInFunctionAtLine {
                                                            in: function,
                                                            at: line,
                                                            with: settings.formatSettings[level] ?? .nothingSettings))
+    }
+}
+
+//MARK: CanLogMessageInFileInFunctionAtLine
+extension Logger: CanLogMessageInFileInFunctionAtLine {
+    
+    open func log(_ message: Any = "", inFile file: String? = #file, inFunction function: String? = #function, atLine line: Int? = #line) {
+        log(message, atLevel: defaultLogLevel, inFile: file, inFunction: function, atLine: line)
     }
 }
 

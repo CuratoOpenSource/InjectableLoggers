@@ -39,7 +39,7 @@ extension MockLogger: CanLogMessageAtLevel {
 //MARK: CanCanLogMessageAtLevelInFileInFunctionAtLine
 extension MockLogger: CanLogMessageAtLevelInFileInFunctionAtLine {
     
-    public func log(_ message: Any, atLevel level: Loglevel?, inFile file: String?, inFunction function: String?, atLine line: Int?) {
+    public func log(_ message: Any, atLevel level: Loglevel, inFile file: String?, inFunction function: String?, atLine line: Int?) {
         loggedMessages.append((level: level, message: message, file: file, function: function, line: line))
     }
 }
