@@ -7,15 +7,14 @@ platform :ios do
 	end
 
 	lane :release do 
-    releaseBranchName = git_branch
-    
-		version = options[:version]
-		ensure_git_branch(branch: 'develop')
+      releaseBranchName = git_branch
+
+      unless releaseBranchName.partition('/').first == "release"
+        raise "Incorrect branch, expected release branch".red
+      end
+
+		  version = releaseBranchName.partition('/').last
 		
-
-		sh("git", "branch", releaseBranchName)
-		sh("git", "checkout", releaseBranchName)
-
   		version_bump_podspec(path: "InjectableLoggers.podspec", version_number: version)
   		cocoapods(clean: true, podfile: "Example/Podfile")
 
