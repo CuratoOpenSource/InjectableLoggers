@@ -25,7 +25,7 @@ platform :ios do
   		pod_lib_lint
 
   		sh("git", "add", "-A")
-  		sh("git", "commit", "-m", "Bump version to #{version}")
+  		sh("git", "commit", "-m", "Bump version to #{version} [ci skip]")
       sh("git", "fetch")
   		sh("git", "checkout", "master")
   		sh("git", "merge", releaseBranchName)
