@@ -5,7 +5,8 @@ import InjectableLoggers
 class SimpleLoggerSpec: QuickSpec {
     
     override func spec() {
-        describe("SimpleLogger") {
+        
+        given("a SimpleLogger") {
             
             var sut: SimpleLogger!
             var settings: SimpleLogger.Settings!
