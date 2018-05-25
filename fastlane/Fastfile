@@ -41,7 +41,7 @@ platform :ios do
                                           api_token: ENV["GITHUB_TOKEN"],
                                           name: version,
                                           tag_name: version,
-                                          description: "[Closed Issues](https://github.com/mennolovink/InjectableLoggers/milestone/6?closed=1)"),
+                                          description: (File.read("changelog") rescue "No changelog provided"),
                                           commitish: "master")
 	end
 end
