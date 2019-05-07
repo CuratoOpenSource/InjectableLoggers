@@ -251,20 +251,20 @@ public class NMBPredicate: NSObject {
         self.predicate = predicate
     }
 
-    func satisfies(_ expression: @escaping () -> NSObject!, location: SourceLocation) -> NMBPredicateResult {
+    func satisfies(_ expression: @escaping () -> NSObject?, location: SourceLocation) -> NMBPredicateResult {
         let expr = Expression(expression: expression, location: location)
         return self.predicate(expr)
     }
 }
 
 extension NMBPredicate: NMBMatcher {
-    public func matches(_ actualBlock: @escaping () -> NSObject!, failureMessage: FailureMessage, location: SourceLocation) -> Bool {
+    public func matches(_ actualBlock: @escaping () -> NSObject?, failureMessage: FailureMessage, location: SourceLocation) -> Bool {
         let result = satisfies(actualBlock, location: location).toSwift()
         result.message.update(failureMessage: failureMessage)
         return result.status.toBoolean(expectation: .toMatch)
     }
 
-    public func doesNotMatch(_ actualBlock: @escaping () -> NSObject!, failureMessage: FailureMessage, location: SourceLocation) -> Bool {
+    public func doesNotMatch(_ actualBlock: @escaping () -> NSObject?, failureMessage: FailureMessage, location: SourceLocation) -> Bool {
         let result = satisfies(actualBlock, location: location).toSwift()
         result.message.update(failureMessage: failureMessage)
         return result.status.toBoolean(expectation: .toNotMatch)
@@ -307,7 +307,7 @@ final public class NMBPredicateStatus: NSObject {
     public static let doesNotMatch: NMBPredicateStatus = NMBPredicateStatus(status: 1)
     public static let fail: NMBPredicateStatus = NMBPredicateStatus(status: 2)
 
-    public override var hashValue: Int { return self.status.hashValue }
+    public override var hash: Int { return self.status.hashValue }
 
     public override func isEqual(_ object: Any?) -> Bool {
         guard let otherPredicate = object as? NMBPredicateStatus else {

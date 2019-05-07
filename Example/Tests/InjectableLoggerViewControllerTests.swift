@@ -45,7 +45,7 @@ class InjectableLoggerViewControllerTests: XCTestCase {
         sut.viewDidAppear(false)
         
         //Assert
-        XCTAssertEqual(mockLogger.loggedMessages.last?.message as? String, "viewDidAppear")
+        XCTAssertEqual(mockLogger.loggedMessages.last?.message as? String, "viewDidAppear(_:)")
         XCTAssertEqual(mockLogger.loggedMessages.last?.level, Loglevel.verbose)
     }
     
