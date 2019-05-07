@@ -7,6 +7,7 @@ open class Logger {
     
     public init(settings: Settings = .verboseSettings) {
         self.settings = settings
+        self.relay = settings.relay
     }
 }
 

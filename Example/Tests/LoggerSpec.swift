@@ -112,6 +112,18 @@ class LoggerSpec: QuickSpec {
                 })
             })
             
+            context("When initializing with settings that contains a relay", {
+                
+                beforeEach {
+                    settings.relay = Logger()
+                    sut = Logger(settings: settings)
+                }
+                
+                it("Then it's relay is the relay from settings", closure: {
+                    expect(sut.relay).to(beIdenticalTo(settings.relay))
+                })
+            })
+            
             context("verbose active loglevel", {
                 beforeEach {
                     settings.activeLogLevel = .verbose
