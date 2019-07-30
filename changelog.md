@@ -1,1 +1,1 @@
-[Closed Issues](https://github.com/mennolovink/InjectableLoggers/milestone/5?closed=1)
+[Closed Issues](https://github.com/lvnkmn/InjectableLoggers/milestone/5?closed=1)
