@@ -40,3 +40,4 @@ fastlane/test_output/
 # `pod install` in .travis.yml
 #
 # Pods/
+.swiftpm
