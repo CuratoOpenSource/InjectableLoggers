@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "InjectableLoggers",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v8)
     ],
     products: [
         .library(name: "InjectableLoggers", targets: ["InjectableLoggers"])
