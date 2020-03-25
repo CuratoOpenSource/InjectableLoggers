@@ -7,7 +7,7 @@ let package = Package(
         .iOS(.v8)
     ],
     products: [
-        .library(name: "InjectableLoggers", targets: ["InjectableLoggers"])
+        .library(name: "InjectableLoggers", type: .dynamic, targets: ["InjectableLoggers"])
     ],
     targets: [
         .target(
