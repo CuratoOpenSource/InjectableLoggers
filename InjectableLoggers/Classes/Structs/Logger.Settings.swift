@@ -1,3 +1,7 @@
+//
+//  Copyright © 2020 Curato Research BV. All rights reserved.
+//
+
 extension Logger {
     public struct Settings {
         /// All messages with loglevel equal to or above this logLevel will be logged

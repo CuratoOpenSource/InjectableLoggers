@@ -1,3 +1,7 @@
+//
+//  Copyright © 2020 Curato Research BV. All rights reserved.
+//
+
 /// Can Log messages to the console
 public struct ConsoleLogger {
     
