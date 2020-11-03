@@ -137,12 +137,7 @@ For some more advance testing check out the example project.
 
 ## Installation
 
-InjectableLoggers is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'InjectableLoggers'
-```
+InjectableLoggers is available through [Swift Package Manager](https://swift.org/package-manager/). To install it, simply add it to your project using this repository's URL as explained [here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
 ## License
 
