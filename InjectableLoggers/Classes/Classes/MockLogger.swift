@@ -1,9 +1,5 @@
 //
-//  MockLogger.swift
-//  Zoomy_Example
-//
-//  Created by Menno on 30/04/2018.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright © 2020 Curato Research BV. All rights reserved.
 //
 
 import Foundation

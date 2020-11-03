@@ -1,9 +1,5 @@
 //
-//  AppDelegate.swift
-//  InjectableLoggers
-//
-//  Created by mclovink@me.com on 04/30/2018.
-//  Copyright (c) 2018 mclovink@me.com. All rights reserved.
+//  Copyright © 2020 Curato Research BV. All rights reserved.
 //
 
 import UIKit

@@ -1,3 +1,7 @@
+//
+//  Copyright © 2020 Curato Research BV. All rights reserved.
+//
+
 open class Logger {
     
     /// All calls to `log(message: atLevel: inFile: inFunction: atLine: line)` will be relayed to this instance
